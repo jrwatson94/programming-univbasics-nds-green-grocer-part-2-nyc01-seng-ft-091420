@@ -5,7 +5,6 @@ def apply_coupons(cart, coupons)
   # Consult README for inputs and outputs
   #
   # REMEMBER: This method **should** update cart
-  coupons_applied = []
   coupons.each do |index|
    cart_item = find_item_by_name_in_collection(index[:item],cart)
    couponed_item_name = "#{index[:item]} W/ COUPON"
